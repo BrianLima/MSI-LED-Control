@@ -62,9 +62,14 @@ namespace MSI_LED_Custom
                 }
             }
 
-            //var x = _DeviceManagerDLL.
+            
 
-            //if ()
+            Class_Fun_MB x = new Class_Fun_MB();
+
+            var t = x.Compare_Support_MB(new List<string> { "MS-7A34|3.x" }); //This is my particular Tomahawk Arctic, for a whole list, check support.cfg inside the gaming app folder
+            x.Init_MB();
+
+            //f ()
             {
 
             }
