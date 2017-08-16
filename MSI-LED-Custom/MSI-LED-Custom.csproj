@@ -114,6 +114,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Lib\_ADL_Interface.cs" />
+    <Compile Include="Lib\_MBAPI_x86_Interface.cs" />
     <Compile Include="Lib\_NDA_Interface.cs" />
     <Compile Include="Manufacturer.cs" />
     <Compile Include="NdaGraphicsInfo.cs" />
@@ -164,6 +165,7 @@
     <Content Include="Lib\ADL.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Lib\MBAPI_x86.dll" />
     <Content Include="Lib\NDA.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
