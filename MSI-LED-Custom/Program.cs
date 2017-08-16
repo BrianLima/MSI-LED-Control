@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MSI_LED_Custom.Lib;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -61,8 +62,15 @@ namespace MSI_LED_Custom
                 }
             }
 
-            
-            ledManager = new LedManager_Common(manufacturer, animationType);
+            //var x = _DeviceManagerDLL.
+
+            //if ()
+            {
+
+            }
+
+
+ledManager = new LedManager_Common(manufacturer, animationType);
             ledManager.InitLedManagers();
             ledManager.StartAll();
             ledManager.UpdateAll(ledColor, animationType);

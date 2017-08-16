@@ -89,5 +89,10 @@ namespace MSI_LED_Custom
                     break;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

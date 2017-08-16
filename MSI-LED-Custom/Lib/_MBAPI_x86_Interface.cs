@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MSI_LED_Custom.Lib
 {
-    static class _MBAPI_x86_Interface
+    static class MB
     {
         internal const string MB_DLL_FileName = "Lib\\MBAPI_x86.dll";
 
