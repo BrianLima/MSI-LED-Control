@@ -1,4 +1,5 @@
 ﻿using MSI_LED_Custom.Lib;
+using SupportModule;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -65,6 +66,13 @@ namespace MSI_LED_Custom
             
 
             Class_Fun_MB x = new Class_Fun_MB();
+            x.ResetLED();
+            x.Monitor();
+
+            
+
+            var y = 
+            MB.SetMysticLEDColor(255,255, 255);
 
             var t = x.Compare_Support_MB(new List<string> { "MS-7A34|3.x" }); //This is my particular Tomahawk Arctic, for a whole list, check support.cfg inside the gaming app folder
             x.Init_MB();
@@ -73,9 +81,11 @@ namespace MSI_LED_Custom
             {
 
             }
+            x.ResetLED();
 
 
-ledManager = new LedManager_Common(manufacturer, animationType);
+
+            ledManager = new LedManager_Common(manufacturer, animationType);
             ledManager.InitLedManagers();
             ledManager.StartAll();
             ledManager.UpdateAll(ledColor, animationType);
@@ -86,6 +96,8 @@ ledManager = new LedManager_Common(manufacturer, animationType);
 
             
             ledManager.StopAll();
+            x.ResetLED();
+
 
         }
 

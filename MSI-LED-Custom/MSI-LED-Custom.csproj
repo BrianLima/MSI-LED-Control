@@ -180,5 +180,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\SupportData\SupportData.csproj">
+      <Project>{8e9afe29-aa17-4ed4-8c57-d879e51c4cd1}</Project>
+      <Name>SupportData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SupportModule\SupportModule.csproj">
+      <Project>{fa8a855c-affd-4f69-82a2-dbf2ca747583}</Project>
+      <Name>SupportModule</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
