@@ -12,7 +12,7 @@ namespace MSI_LED_Custom.Lib
         internal const string MB_DLL_FileName = "Lib\\MBAPI_x86.dll";
 
         [DllImport("Lib\\MBAPI_x86.dll", CharSet = CharSet.Auto)]
-        public static extern bool CheckMBVersion(string _csMB, string _csMBVer, string _csMBMarket, string _csMBSIOInit);
+        public static extern bool CheckMBVersion(string _csMB, string _csMBVer, string _csMBMarket, string _csMBSIOInit, string systemroot);
 
         [DllImport("Lib\\MBAPI_x86.dll", CharSet = CharSet.Unicode)]
         public static extern bool GetDRAMInfo(int slot, [MarshalAs(UnmanagedType.BStr)] out string manufac, [MarshalAs(UnmanagedType.BStr)] out string partnum);
@@ -255,19 +255,13 @@ namespace MSI_LED_Custom.Lib
         public static extern bool ControlKingStonDRAMLED(int r, int g, int b, int speed, int style);
 
         [DllImport("Lib\\MBAPI_x86.dll")]
-        public static extern bool ControlCorsairDRAMLED(int changetime, int darktime, int colornum, int r, int g, int b, int brightN, int brightD);
+        public static extern bool AuraNoanimation(byte r, byte g, byte b);
 
         [DllImport("Lib\\MBAPI_x86.dll")]
-        public static extern bool SetCorsairDRAMLED(int mode);
+        public static extern bool AuraBreathing(byte r, byte g, byte b);
 
         [DllImport("Lib\\MBAPI_x86.dll")]
-        public static extern bool ControlGALAXDRAMLED(int style, int r, int g, int b);
-
-        [DllImport("Lib\\MBAPI_x86.dll")]
-        public static extern bool ControlGALAXDRAMLED_Byte(int data0, int data1, int data2, int data3);
-
-        [DllImport("Lib\\MBAPI_x86.dll")]
-        public static extern bool ControlMICRONDRAMLED(int style, int r, int g, int b);
+        public static extern bool AuraFlashing(byte r, byte g, byte b);
 
         [DllImport("Lib\\MBAPI_x86.dll")]
         public static extern bool ReleaseDll();
